@@ -1,0 +1,9 @@
+# myproject01/k8s/namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: myproject-prod  # 命名空间名称（按需修改）
+  labels:
+    name: myproject-prod
+    env: production     # 环境标签（production/staging/dev）
+    team: devops        # 所属团队标签
